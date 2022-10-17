@@ -106,7 +106,11 @@ def metrics(koData, tbillData):
     print('Coca-Cola\'s stock had a Downside Deviation of ', downsideDeviation,
           '. This means that the stock will have little risk of loss.')
 
-    # Finally, calculate the Maximum Drawdown
+    # Finally, calculate the Maximum Drawdown for KO based on the 2021 stock data
+    highestPrice, lowestPrice = max(koData.values), min(koData.values)
+    maximumDrawdownPercent = ((lowestPrice-highestPrice)/highestPrice)*100
+    print('Coca-Cola\'s stock had a Maximum Drawdown of ', maximumDrawdownPercent,
+          '% This means that for someone or a company that invests in Coca-Cola, the maximum loss that they could get is a ', maximumDrawdownPercent, '% loss.')
 
 
 '''References for learning financial terms and concepts for capm method:
