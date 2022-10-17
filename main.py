@@ -128,7 +128,6 @@ def capm(tslaData, spyData):
     print('Tesla had a beta of ', beta, '. This means that it is ',
           (beta-1)*100, '% more volatile than the S&P 500.')
     # Next calculate the alpha = stock annual return - benchmark annual return
-    print(tslaData.values[0], tslaData.values[-1])
     tslaAnnualReturn = (
         tslaData.values[-1]-tslaData.values[0])/tslaData.values[0]
     spyAnnualReturn = (spyData.values[-1]-spyData.values[0])/spyData.values[0]
