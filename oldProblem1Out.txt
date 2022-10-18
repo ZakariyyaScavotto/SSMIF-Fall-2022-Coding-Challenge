@@ -1,0 +1,40 @@
+Finished generating DataFrames, Equity and ETF DataFrame Head: 
+            KO Adj Close  TSLA Adj Close  SPY Adj Close
+Date
+2021-01-04     50.030094      243.256668     359.773315
+2021-01-05     49.480118      245.036667     362.251129
+2021-01-06     47.906010      251.993332     364.416870
+2021-01-07     47.374977      272.013336     369.831146
+2021-01-08     48.437027      293.339996     371.938385
+
+STATISTICS METHOD OUTPUT:
+Displaying Graphs to Visualize Distribution
+
+To test for a significant difference in mean daily returns, I used a modification of a student's t-test Welch's t-test. To perform this test, I am assuming that the observations in each sample are:
+Normally distributed (confirmed looking at histograms). Note: for a student's t-test, there is an assumption of equal variance between the two grooups, but this assumption is not the case in Welch's t-test, meaning that the only assumption is the normal distribution assumption.
+
+p-value:  0.5252563174852881
+
+result: because the p-value is greater than the significance level of 0.05, we fail to reject the null hypothesis, meaning that there is 
+no statistically significant difference between the mean daily returns of the two equities.
+
+To test for a significant difference in volatilities, I used a f-test. To perform this test, I am assuming that the observations in each 
+sample are:
+Normally distributed (confirmed looking at histograms) and are independent events (Coke is a beverage company, while Tesla is a car company, one does not have a direct impact on the other).
+
+p-value:  1.1102230246251565e-16
+
+result: because the p-value is less than the significance level of 0.05, we can reject the null hypothesis, meaning that there is a statistically significant difference between the volatilities of the two equities.
+
+METRICS METHOD OUTPUT
+Coca-Cola's stock has a volatility of  14.728723620929568 %. This means that the stock's price can fluctuate up and down by 14.728723620929568 percent.
+Coca-Cola's stock has a 95% VaR of  -1.5261700059297223 %. This means that we can say with 95% confidence that the stock's value has the 
+potential to lose  1.5261700059297223 percent of its value over the course of the whole trading year.
+Coca-Cola's stock had an annual Sharpe Ratio of  0.30158987722322844 . This means that the stock will have significant risk of loss.     
+Coca-Cola's stock had a Downside Deviation of  0.6784914625579417 . This means that the stock will have little risk of loss.
+Coca-Cola's stock had a Maximum Drawdown of  -21.16466051263136 % This means that for someone or a company that invests in Coca-Cola, the maximum loss that they could get is a  -21.16466051263136 % loss.
+
+CAPM METHOD OUTPUT:
+Tesla had an alpha of  0.14304564881558784 . This means that it has a  0.14304564881558784 % higher return rate than the S&P 500.        
+
+Program finished

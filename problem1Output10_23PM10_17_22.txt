@@ -1,0 +1,40 @@
+STATISTICS METHOD OUTPUT:
+To test for a significant difference in mean daily returns, I used a modification of a student's t-test Welch's t-test. To perform this test, I am assuming that the observations in each sample are:
+Normally distributed (confirmed looking at histograms). Note: for a student's t-test, there is an assumption of equal variance between the two grooups, but this assumption is not the case in Welch's t-test, meaning that the only assumption is the normal distribution assumption.
+
+p-value:  0.5252561889359659
+
+result: because the p-value is greater than the significance level of 0.05, we fail to reject the null hypothesis, meaning that there is 
+no statistically significant difference between the mean daily returns of the two equities.
+
+To test for a significant difference in volatilities, I used a f-test. To perform this test, I am assuming that the observations in each 
+sample are:
+Normally distributed (confirmed looking at histograms) and are independent events (Coke is a beverage company, while Tesla is a car company, one does not have a direct impact on the other).
+
+p-value:  1.1102230246251565e-16
+
+result: because the p-value is less than the significance level of 0.05, we can reject the null hypothesis, meaning that there is a statistically significant difference between the volatilities of the two equities.
+
+METRICS METHOD OUTPUT
+Coca-Cola's stock has a volatility of  14.728712232645934 %. This means that the stock's price can fluctuate up and down by 14.728712232645934 %.
+Coca-Cola's volatility is greater than the volatility of the S&P 500, since its volatility is greater than that of the S&P's  12.90520340652825 %.
+
+Coca-Cola's stock has a 95% VaR of  -1.5261781045961653 %. This means that we can say with 95% confidence that the stock's value has the 
+potential to lose  1.5261781045961653 % of its value over the course of the whole trading year.
+Coca-Cola's 95% VaR is greater than the 95% VaR of the S&P 500, since its 95% VaR is greater than that of the S&P's  -1.263542225934089 %, meaning that you would lose more investing in just coke than in the whole S&P 500.
+
+Coca-Cola's stock had an annual Sharpe Ratio of  0.3015894760611171 . This means that the stock will have significant risk of loss.
+Coca-Cola's 95% Sharpe Ratio is less than the Sharpe Ratio of the S&P 500, since its Sharpe Ratio is less than that of the S&P's  1.2578734768665092 %, meaning that you would be better off investing in the whole S&P 500 than just coke.
+
+Coca-Cola's stock had a Downside Deviation of  0.6771434256918939 %. This means that the stock will have little risk of loss.
+Coca-Cola's Downside Deviation is greater than the Downside Deviation of the S&P 500, since its Downside Deviation is greater than that of the S&P's  0.5630708804885273 %, meaning that you would be better off investing in the whole S&P 500 than just coke.
+
+Coca-Cola's stock had a Maximum Drawdown of  -21.164653926079126 % This means that for someone or a company that invests in Coca-Cola, the maximum loss that they could get is a  -21.164653926079126 % loss.
+Coca-Cola's Maximum Drawdown is less than the Maximum Drawdown of the S&P 500, since its Maximum Drawdown is less than that of the S&P's 
+ -23.77926119542618 %, meaning that you would be better off investing in coke than the whole S&P 500.
+
+
+CAPM METHOD OUTPUT:
+Tesla had a beta of  1.9545068284925584 . This means that it is  95.45068284925584 % more volatile than the S&P 500.
+
+Tesla had an alpha of  0.14304553811503445 . This means that it has a  0.14304553811503445 % higher return rate than the S&P 500.
