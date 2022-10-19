@@ -243,6 +243,7 @@ def capm(tslaData, spyData):
 def main():
     '''Method to run the different methods'''
     # Generate the DataFrame with adjusted closing price history data
+    print('Generating DataFrames')
     closeHistoryDF = generateDataframe()
     # Get Treasury Bill Rates (TBIL) for calculating the Risk-free rate in the metrics method and store in a DataFrame
     # Data from https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_bill_rates&field_tdr_date_value=2021
